@@ -205,6 +205,19 @@ unicode = ["unicodedata2 (>=14.0.0)"]
 woff = ["zopfli (>=0.1.4)", "brotlicffi (>=0.8.0)", "brotli (>=1.0.1)"]
 
 [[package]]
+name = "graphviz"
+version = "0.20"
+description = "Simple Python interface for Graphviz"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+dev = ["tox (>=3)", "flake8", "pep8-naming", "wheel", "twine"]
+docs = ["sphinx (>=4)", "sphinx-autodoc-typehints", "sphinx-rtd-theme"]
+test = ["pytest (>=7)", "pytest-mock (>=3)", "mock (>=4)", "pytest-cov", "coverage"]
+
+[[package]]
 name = "importlib-resources"
 version = "5.7.1"
 description = "Read resources from Python packages"
@@ -444,6 +457,17 @@ description = "A fast implementation of the Cassowary constraint solver"
 category = "main"
 optional = false
 python-versions = ">=3.7"
+
+[[package]]
+name = "makefile2dot"
+version = "1.0.2"
+description = "Create a graphviz graph of a Makefile."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+graphviz = "*"
 
 [[package]]
 name = "markupsafe"
@@ -1038,7 +1062,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.11"
-content-hash = "2936b6007b1121cbee5f034750c52aebd0a95a5dbe394b07317f10f382ef4bda"
+content-hash = "974292ba0663199a96dac0752952db4e56c1c4367aeed6682f346e989f661a53"
 
 [metadata.files]
 appnope = [
@@ -1196,6 +1220,10 @@ fonttools = [
     {file = "fonttools-4.33.3-py3-none-any.whl", hash = "sha256:f829c579a8678fa939a1d9e9894d01941db869de44390adb49ce67055a06cc2a"},
     {file = "fonttools-4.33.3.zip", hash = "sha256:c0fdcfa8ceebd7c1b2021240bd46ef77aa8e7408cf10434be55df52384865f8e"},
 ]
+graphviz = [
+    {file = "graphviz-0.20-py3-none-any.whl", hash = "sha256:62c5f48bcc534a45b4588c548ff75e419c1f1f3a33d31a91796ae80a7f581e4a"},
+    {file = "graphviz-0.20.zip", hash = "sha256:76bdfb73f42e72564ffe9c7299482f9d72f8e6cb8d54bce7b48ab323755e9ba5"},
+]
 importlib-resources = [
     {file = "importlib_resources-5.7.1-py3-none-any.whl", hash = "sha256:e447dc01619b1e951286f3929be820029d48c75eb25d265c28b92a16548212b8"},
     {file = "importlib_resources-5.7.1.tar.gz", hash = "sha256:b6062987dfc51f0fcb809187cffbd60f35df7acb4589091f154214af6d0d49d3"},
@@ -1297,6 +1325,10 @@ kiwisolver = [
     {file = "kiwisolver-1.4.2-pp37-pypy37_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:0e8afdf533b613122e4bbaf3c1e42c2a5e9e2d1dd3a0a017749a7658757cb377"},
     {file = "kiwisolver-1.4.2-pp37-pypy37_pp73-win_amd64.whl", hash = "sha256:42f6ef9b640deb6f7d438e0a371aedd8bef6ddfde30683491b2e6f568b4e884e"},
     {file = "kiwisolver-1.4.2.tar.gz", hash = "sha256:7f606d91b8a8816be476513a77fd30abe66227039bd6f8b406c348cb0247dcc9"},
+]
+makefile2dot = [
+    {file = "makefile2dot-1.0.2-py3-none-any.whl", hash = "sha256:414f57270e62425642885af6f96d0bbe4f425dec0f50e4c5eeb81520d3aaac3b"},
+    {file = "makefile2dot-1.0.2.tar.gz", hash = "sha256:b789ef27cf1de994dd6b8afa62fb9829c9b1fa105ee39fc328fd23a048b20d41"},
 ]
 markupsafe = [
     {file = "MarkupSafe-2.1.1-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:86b1f75c4e7c2ac2ccdaec2b9022845dbb81880ca318bb7a0a01fbf7813e3812"},

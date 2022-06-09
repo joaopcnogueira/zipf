@@ -1,7 +1,0 @@
-../data/dracula.txt bash book_summary.sh ../data/dracula.txt Release
-../data/frankenstein.txt bash book_summary.sh ../data/frankenstein.txt Release
-../data/jane_eyre.txt bash book_summary.sh ../data/jane_eyre.txt Release
-../data/moby_dick.txt bash book_summary.sh ../data/moby_dick.txt Release
-../data/sense_and_sensibility.txt bash book_summary.sh ../data/sense_and_sensibility.txt Release
-../data/sherlock_holmes.txt bash book_summary.sh ../data/sherlock_holmes.txt Release
-../data/time_machine.txt bash book_summary.sh ../data/time_machine.txt Release
